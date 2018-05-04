@@ -31,16 +31,19 @@ grades.push_back(mark);
 double student::getScore ()
 {
 
-double temp = 0;
-
-for (int i = 0; i < grades.size(); i++)
-{
-
-temp += grades[i];
-
-}
-double total = temp / grades.size();
-
-return total;
+    double finalGrade = 0;
+    double number = 0; 
+    for(int i = 0 ; i<grades.size(); i++)
+    {
+    number = number + grades[i]; 
+    } 
+    if(grades.size() !=0)
+    {
+  finalGrade = number/grades.size(); 
+    return finalGrade; 
+    } 
+    else 
+    { 
+    return finalGrade = 0; 
 
 }
